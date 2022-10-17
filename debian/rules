@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+export CC=clang
+export CXX=clang++
+export DEB_CXXFLAGS_MAINT_APPEND = -fPIC
+export DEB_CPPFLAGS_MAINT_APPEND = -DNDEBUG -I/usr/include/android
+export DEB_LDFLAGS_MAINT_APPEND = -fPIC
+
+%:
+	dh $@
+
+override_dh_auto_build: debian/Makefile
+	dh_auto_build --buildsystem=makefile -- --file=$<

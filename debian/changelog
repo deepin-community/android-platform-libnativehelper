@@ -1,0 +1,78 @@
+android-platform-libnativehelper (10.0.0+r36-2) unstable; urgency=medium
+
+  * include missing headers
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Fri, 27 Nov 2020 17:02:23 +0100
+
+android-platform-libnativehelper (10.0.0+r36-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Mon, 23 Nov 2020 13:13:37 +0100
+
+android-platform-libnativehelper (8.1.0+r23-1) unstable; urgency=medium
+
+  * Standards-Version => 4.2.1
+  * Fix FTCBFS by using dh_auto_build to invoke makefiles
+  * Don't Build-Depends on android-platform-libcore-headers
+  * Build on all architectures
+
+  [ Hans-Christoph Steiner ]
+  * New upstream release
+  * Switch to Salsa
+  * Remove get-orig-source
+  * Fix missing-notice-file-for-apache-license
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Thu, 01 Nov 2018 09:57:27 +0800
+
+android-platform-libnativehelper (7.0.0+r33-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Tue, 25 Apr 2017 00:01:47 +0200
+
+android-platform-libnativehelper (7.0.0+r1-2) unstable; urgency=medium
+
+  * android-libnativehelper-dev Breaks & Replaces android-libnativehelper
+    because README is moved to android-libnativehelper-dev (Closes: #847710)
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Sun, 11 Dec 2016 20:16:17 +0800
+
+android-platform-libnativehelper (7.0.0+r1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update Standards-Version to 3.9.8:
+    * Move documentations from android-libnativehelper to
+      android-libnativehelper-dev
+  * Update to debhelper 10
+  * d/control:
+    * Enable builds for ARM & MIPS
+    * Unify the maintainer name as "Android Tools Maintainers"
+    * Add android-platform-libcore-headers to Build-Depends
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Tue, 06 Dec 2016 22:11:17 +0800
+
+android-platform-libnativehelper (6.0.1+r55-1) unstable; urgency=medium
+
+  [ Hans-Christoph Steiner ]
+  * set Android Build-Depends: to have the same version as this package
+
+  [ Chirayu Desai ]
+  * New upstream release.
+  * Add myself to Uploaders
+  * debian: Add watch file for usage with uscan
+  * Update android-platform-system-core Android Build-Depends to 6.0.1+r55
+
+  [ Kai-Chung Yan ]
+  * d/Makefile: Switch to use C++ compiler
+  * Install libnativehelper to multiarch directory
+    - d/control: Build-Depends on dh-exec
+  * d/rules: Define NDEBUG for C++ binaries
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Thu, 25 Aug 2016 15:41:49 +0800
+
+android-platform-libnativehelper (6.0.1+r16-1) unstable; urgency=medium
+
+  * Initial release (Closes: #813899)
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Sat, 06 Feb 2016 19:54:03 +0800
