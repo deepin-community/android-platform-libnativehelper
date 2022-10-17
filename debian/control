@@ -1,0 +1,34 @@
+Source: android-platform-libnativehelper
+Section: libs
+Priority: optional
+Maintainer: Android Tools Maintainers <android-tools-devel@lists.alioth.debian.org>
+Uploaders: Kai-Chung Yan <seamlikok@gmail.com>,
+           Hans-Christoph Steiner <hans@eds.org>,
+           Chirayu Desai <chirayudesai1@gmail.com>
+Build-Depends: debhelper-compat (= 12),
+               android-libbase-dev (>= 1:10.0.0+r36-1~),
+               android-libcutils-dev (>= 1:10.0.0+r36-1~),
+               android-liblog-dev (>= 1:10.0.0+r36-1~),
+               clang,
+               dh-exec,
+Standards-Version: 4.2.1
+Rules-Requires-Root: no
+Homepage: https://android.googlesource.com/platform/libnativehelper
+Vcs-Git: https://salsa.debian.org/android-tools-team/android-platform-libnativehelper.git
+Vcs-Browser: https://salsa.debian.org/android-tools-team/android-platform-libnativehelper
+
+Package: android-libnativehelper
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Support functions for Android's class libraries
+ This library is only used by Android SDK currently.
+
+Package: android-libnativehelper-dev
+Architecture: any
+Depends: android-libnativehelper (= ${binary:Version}), ${misc:Depends}
+Breaks: android-libnativehelper (<< 10.0.0+r36-1~)
+Replaces: android-libnativehelper (<< 10.0.0+r36-1~)
+Description: Support functions for Android's class libraries - Development files
+ This library is only used by Android SDK currently.
+ .
+ This package contains the development files.
