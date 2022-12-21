@@ -1,3 +1,10 @@
+android-platform-libnativehelper (10.0.0+r36-3) unstable; urgency=medium
+
+  [ Hans-Christoph Steiner ]
+  * UNRELEASED
+
+ -- Deepin Packages Builder <packages@deepin.org>  Wed, 21 Dec 2022 17:15:44 +0800
+
 android-platform-libnativehelper (10.0.0+r36-2) unstable; urgency=medium
 
   * include missing headers
